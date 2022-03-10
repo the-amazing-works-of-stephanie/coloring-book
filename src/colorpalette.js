@@ -9,12 +9,12 @@ export default function ColorPalette(props) {
         {color: '#ff0000', pos: 25},
         {color: '#fcb045', pos: 82}]
 
-    const gp = new GradientPath({
-        path: document.querySelector('#gradient-path path'),
-        segments: 30,
-        samples: 3,
-        precision: 2
-    });
+    // const gp = new GradientPath({
+    //     path: document.querySelector('#gradient-path path'),
+    //     segments: 30,
+    //     samples: 3,
+    //     precision: 2
+    // });
 
     // const colorCellFromValue = (params, value = 10, midpoint = 31) => {
     //     const getColorIndex = Math.round(midpoint * value);
@@ -23,7 +23,8 @@ export default function ColorPalette(props) {
     //         .setMidpoint(midpoint).getColor(getColorIndex === 0 ? 0.01 : getColorIndex);
     // };
 
-    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'turquoise', 'purple', 'pink', 'deeppink', gp.render({type: 'path', fill: sunsetGradient, width: 10})]
+    // const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'turquoise', 'purple', 'pink', 'deeppink', gp.render({type: 'path', fill: sunsetGradient, width: 10})]
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'turquoise', 'purple', 'pink', 'deeppink', 'url(#gradient)']
 
     return(
         <div className="color-palette">
