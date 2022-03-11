@@ -1,0 +1,25 @@
+.header {
+    font-size: 3rem;
+    font-family: 'Ringbearer', sans-serif;
+    color: saddlebrown;
+    text-align: center;
+}
+
+.header-container {
+    border-style: ridge;
+    border-color: antiquewhite;
+    border-width: 0.5rem;
+}
+
+.subheader {
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-family: 'Ringbearer', sans-serif;
+    color: saddlebrown;
+    text-align: center;
+}
+
+.thumbnails {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

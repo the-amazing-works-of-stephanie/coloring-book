@@ -1,25 +1,64 @@
-.flower {
-  display: flex;
-  justify-content: center;
+@font-face {
+  font-family: 'Ringbearer';
+  src: url("./components/RingbearerMedium.ttf") format('truetype');
 }
 
-.color-palette {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+@font-face {
+  font-family: 'TheShire';
+  src: url("./components/TheShire.ttf") format('truetype');
 }
 
-.color-swatch {
-  height: 70px;
-  width: 70px;
-  border-radius: 7px;
-  margin: 9px;
+body {
+  height: 100vh;
+  width: auto;
+  background: linear-gradient(315deg, rgba(29,113,60,0.90) 0%, rgba(23,255,115,0.80) 100%);
+}
+
+.navbar {
+  position: relative;
+}
+
+.navBar button {
+  background: transparent;
+  border: none;
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  z-index: 10;
   cursor: pointer;
-  border: 4px solid black;
 }
 
-.color-swatch-active {
-  box-shadow: inset 0 0 15px #000000;
-  transition: all 0.2s;
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: darkcyan;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  max-width: 290px;
+  z-index: 9;
 }
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #3fffd2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menuNav li:first-child {
+  margin-top: 7rem;
+}
+
+
 

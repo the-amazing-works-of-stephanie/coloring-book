@@ -1,14 +1,9 @@
 import React from 'react'
+import './colorpalette.css'
 import GradientPath from 'gradient-path';
 // import colorGradient from 'javascript-color-gradient'
 
 export default function ColorPalette(props) {
-
-    const sunsetGradient = [
-        {color: '#833ab4', pos: 0},
-        {color: '#ff0000', pos: 25},
-        {color: '#fcb045', pos: 82}]
-
     // const gp = new GradientPath({
     //     path: document.querySelector('#gradient-path path'),
     //     segments: 30,
@@ -23,8 +18,8 @@ export default function ColorPalette(props) {
     //         .setMidpoint(midpoint).getColor(getColorIndex === 0 ? 0.01 : getColorIndex);
     // };
 
-    // const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'turquoise', 'purple', 'pink', 'deeppink', gp.render({type: 'path', fill: sunsetGradient, width: 10})]
-    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'turquoise', 'purple', 'pink', 'deeppink', 'url(#gradient)']
+    const colors = ["#1F4275", "#aaa9ad", "#391802", "#006a4e", "#af002a", "#ffe135", "#bd33a4", "#318ce7",
+        "#66b447", "#46cb18", "#ff7f00", "#00c3e3", "#512888", "#0072bb", "#e94196", "#EA3D3D", "#EED41F", "#400090"]
 
     return(
         <div className="color-palette">

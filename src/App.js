@@ -1,26 +1,25 @@
 import React, {useState} from "react";
 import './App.css';
-import Flower from './clear-flower';
-import ColorPalette from './colorpalette';
+import Navbar from './navbar';
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
+import Home from "./pages";
+import ColoringPage from "./pages/ColoringPage";
 
-const App = () => {
-  const [fillColors, setFillColors] = useState(Array(5).fill('white'))
-  const [currentColor, setCurrentColor] = useState('blue')
-
-  const onFillColor = (i) => {
-    let newFillColors = fillColors.slice(0)
-    newFillColors[i] = currentColor
-    setFillColors(newFillColors)
-  }
-
-  return (
-      <div className = "App">
-        <div className="flower">
-          <Flower fillColors={fillColors} onFill = {onFillColor} />
-        </div>
-          <ColorPalette currentColor={currentColor} changeColor={setCurrentColor}/>
-      </div>
-  )
+function App() {
+    return (
+        <body>
+        <div className="App">
+                <Router>
+                    <Navbar />
+                    <Routes>
+                        <Route exact path='/' exact element={<Home />} />
+                        <Route path='/coloringpage' element={<ColoringPage/>} />
+                    </Routes>
+                </Router>
+            </div>
+        </body>
+    );
 }
 
 // function App() {
