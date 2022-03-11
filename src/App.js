@@ -11,7 +11,7 @@ function App() {
         <body>
         <div className="App">
                 <Router>
-                    <Navbar />
+                    {/*<Navbar />*/}
                     <Routes>
                         <Route exact path='/' exact element={<Home />} />
                         <Route path='/coloringpage' element={<ColoringPage/>} />

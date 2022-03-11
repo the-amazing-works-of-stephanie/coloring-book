@@ -3,12 +3,12 @@
     font-family: 'Ringbearer', sans-serif;
     color: saddlebrown;
     text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
 }
 
 .header-container {
-    border-style: ridge;
-    border-color: antiquewhite;
-    border-width: 0.5rem;
+    padding: 2rem;
 }
 
 .subheader {
@@ -22,4 +22,22 @@
 .thumbnails {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.Nav {
+    border-style: groove;
+    border-color: indigo;
+    border-width: 2rem;
+    height: 70vh;
+    width: 80%;
+}
+.NavMenu {}
+.NavLink {
+    color: #808080;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
 }
