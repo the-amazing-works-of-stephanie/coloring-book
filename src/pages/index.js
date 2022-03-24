@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { NavLink as Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import { Carousel } from 'react-carousel-minimal';
 import './pages.css';
 import "./ColoringPage"
@@ -7,7 +7,7 @@ import lotr1 from '../components/lotr1.jpg'
 import lotr2 from '../components/lotr2.jpg'
 import lotr3 from '../components/lotr3.jpg'
 import lotr4 from '../components/lotr4.jpg'
-import {NavLink} from "../navbar/NavbarElements";
+// import {NavLink} from "../navbar/NavbarElements";
 
 // This is the home page that displays when the page first loads
 const Home = () => {
@@ -47,26 +47,27 @@ const Home = () => {
 
             <div className="subheader">Click on a picture to get coloring!</div>
 
-            <div style={{padding: "1rem 2rem 1rem 2rem"}}>
+            {/*<div style={{padding: "1rem 2rem 1rem 2rem"}}>*/}
                 <div className="Nav">
-                    <div className="NavMenu">
-                        <div className="NavLink">
-                            <NavLink to="/coloringpage" activeStyle>
-                                <img src={lotr1} alt="img1" height={600} width={800} />
-                            </NavLink>
-                            <NavLink to="/coloringpage" activeStyle>
-                                <img src={lotr2} alt="img1" height={600} width={800} />
-                            </NavLink>
-                            <NavLink to="/coloringpage" activeStyle>
-                                <img src={lotr3} alt="img1" height={600} width={800} />
-                            </NavLink>
-                            <NavLink to="/coloringpage" activeStyle>
-                                <img src={lotr4} alt="img1" height={600} width={800} />
-                            </NavLink>
-                        </div>
+                    <div className="NavLink">
+                        <NavLink to="/coloringpage" activeStyle>
+                            <img src={lotr1} alt="img1" height={350} width={650} />
+                        </NavLink>
+                        <NavLink to="/coloringpage" activeStyle>
+                            <img src={lotr2} alt="img1" height={450} width={650} />
+                        </NavLink>
+                        <NavLink to="/coloringpage" activeStyle>
+                            <img src={lotr3} alt="img1" height={650} width={500} />
+                        </NavLink>
+                        <NavLink to="/coloringpage" activeStyle>
+                            <img src={lotr4} alt="img1" height={650} width={500} />
+                        </NavLink>
+
+                    {/* add a footer with a link to more information about the project (i.e. the writeup we have to
+                     do about why we did what we did for the art project) as well as an ownership blurb */}
                     </div>
                 </div>
-            </div>
+            {/*</div>*/}
         </div>
     );
 };

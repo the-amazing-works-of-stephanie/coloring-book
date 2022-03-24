@@ -1,24 +1,22 @@
 import React, {useState} from "react";
 import './App.css';
-import Navbar from './navbar';
+// import Navbar from './navbar';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Home from "./pages";
 import ColoringPage from "./pages/ColoringPage";
 
 function App() {
-    return (
-        <body>
-        <div className="App">
-                <Router>
-                    {/*<Navbar />*/}
-                    <Routes>
-                        <Route exact path='/' exact element={<Home />} />
-                        <Route path='/coloringpage' element={<ColoringPage/>} />
-                    </Routes>
-                </Router>
-            </div>
-        </body>
+return (
+    <div className="App">
+            <Router>
+                {/*<Navbar />*/}
+                <Routes>
+                    <Route exact path='/' exact element={<Home />} />
+                    <Route path='/coloringpage' element={<ColoringPage/>} />
+                </Routes>
+            </Router>
+        </div>
     );
 }
 
