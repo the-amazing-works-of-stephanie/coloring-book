@@ -1,9 +1,10 @@
 import React from 'react'
 
 export default class Gollum extends React.Component {
+
   render() {
     return (
-        <svg width="816" height="1056" xmlns="http://www.w3.org/2000/svg">
+        <svg width="700" height="700" xmlns="http://www.w3.org/2000/svg">
           <title>Gollum</title>
           <g id="layer1">
             <path id="svg01" onClick={() => this.props.onFill(0)} fill={this.props.fillColors[0]} fill-rule="evenodd"

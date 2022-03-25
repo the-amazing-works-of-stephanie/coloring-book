@@ -1,4 +1,4 @@
-/* This file will contain code exclusive to the Home page */
+/* This file will contain code exclusive to the Home & Coloring pages */
 
 .header {
     font-size: 3rem;
@@ -14,7 +14,6 @@
 }
 
 .subheader {
-    padding-top: 1rem;
     font-size: 2rem;
     font-family: 'Ringbearer', sans-serif;
     color: saddlebrown;
@@ -50,43 +49,54 @@ img {
     border-color: saddlebrown;
     border-width: 1rem;
 }
-
-.navbar {
-    position: relative;
+svg {
+    max-height: 75vh;
+    max-width: 75vh;
+    margin: auto;
 }
 
-.navBar button {
-    background: transparent;
-    border: none;
-    max-height: 350px;
-    width: auto;
-    /*position: fixed;*/
-    /*left: 40px;*/
-    /*top: 40px;*/
-    /*z-index: 10;*/
-    cursor: pointer;
+/* Coloring Book page */
+.ColoringPage {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
-.menuNav {
-    overflow-y: scroll;
-    list-style: none;
-    position: fixed;
-    top: 0;
-    background: darkcyan;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 0;
+.paletteContainer {
+    display: inline-block;
+    background: white;
+    border-color: saddlebrown;
+    border-style: inset;
+    border-width: 1rem;
+    margin: 2rem;
+    width: 20vh;
+    height: 75vh;
+    overflow: scroll;
+}
+
+.eraserContainer {
+    display: inline-block;
+    background: white;
+    border-color: saddlebrown;
+    border-style: inset;
+    border-width: 1rem;
+    margin: 2rem;
+    width: 15vh;
+    height: 15vh;
+}
+
+/* Coloring pages */
+.gollum {
+    display: inline-block;
+    background: white;
+    border-color: saddlebrown;
+    border-style: outset;
+    border-width: 1rem;
+    margin: 2rem;
+    width: 75vh;
+    height: 75vh;
+    object-fit: contain;
+    text-align: center;
     overflow: hidden;
-    max-width: 290px;
-    z-index: 9;
 }
-
-.menuNav.showMenu {
-    width: 100%;
-}
-
-.menuNav li:first-child {
-    margin-top: 7rem;
-}
-

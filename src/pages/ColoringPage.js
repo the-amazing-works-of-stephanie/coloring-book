@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import Flower from '../components/clear-flower';
 import Gollum from '../components/gollum'
 import ColorPalette from '../components/colorpalette';
+import Eraser from '../components/eraser'
 import "./pages.css"
 
 const ColoringPage = () => {
@@ -23,6 +24,16 @@ const ColoringPage = () => {
             <div className='header-container'>
                 <div className="header">Welcome to the coloring page!</div>
             </div>
+            <div className="gollum">
+                <Gollum fillColors={fillColors} onFill = {onFillColor} />
+            </div>
+            <div className="paletteContainer">
+                <ColorPalette currentColor={currentColor} changeColor={setCurrentColor}/>
+            </div>
+            <div className="eraserContainer">
+                <div className="subheader">Eraser</div>
+                <Eraser currentColor={currentColor} changeColor={setCurrentColor}/>
+            </div>
             {/* need to make a square on the upper half of the page to contain the image
             should have zoom in/out capabilities & be a specific size (800x600?)
             how to check if image is horizontal or vertically-aligned? maybe I can put a special variable into the svg
@@ -30,13 +41,9 @@ const ColoringPage = () => {
             {/* also need a box to contain the different colors in the color palette
             box is size-locked to a specific size with scroll enabled
             perhaps there will be headers for each "type" of color, like regular vs gradient vs pattern? */}
-            <div className="gollum">
-                <Gollum fillColors={fillColors} onFill = {onFillColor} />
-            </div>
             {/*<div className="flower">*/}
             {/*    <Flower fillColors={fillColors} onFill = {onFillColor} />*/}
             {/*</div>*/}
-            <ColorPalette currentColor={currentColor} changeColor={setCurrentColor}/>
         </div>
     )
 }
