@@ -13,8 +13,8 @@ import lotr4 from '../components/lotr4.jpg'
 const Home = () => {
     const data = [
         {
-            "image": require('../components/lotr1.jpg'),
-            "caption": "pic 1"
+            "image": require('../components/gollumpic.jpg'),
+            "caption": "Gollum Coloring Page"
         },
         {
             "image": require("../components/lotr2.jpg"),
@@ -47,11 +47,10 @@ const Home = () => {
 
             <div className="subheader">Click on a picture to get coloring!</div>
 
-            {/*<div style={{padding: "1rem 2rem 1rem 2rem"}}>*/}
                 <div className="Nav">
                     <div className="NavLink">
                         <NavLink to="/coloringpage" activeStyle>
-                            <img src={lotr1} alt="img1" height={350} width={650} />
+                            <img src={gollumpic} alt="gollum" height={350} width={650} />
                         </NavLink>
                         <NavLink to="/coloringpage" activeStyle>
                             <img src={lotr2} alt="img1" height={450} width={650} />
