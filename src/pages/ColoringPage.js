@@ -18,7 +18,7 @@ const ColoringPage = () => {
     }
 
     //right now we will just render one picture to color, but I will try to add more pictures in the future if I can!
-    //NOTE: need to rearrange layout of page. also add eraser????
+    //NOTE: need to rearrange layout of page.
     return (
         <div className="ColoringPage">
             <div className='header-container'>

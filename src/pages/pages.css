@@ -19,6 +19,12 @@
     color: saddlebrown;
     text-align: center;
 }
+.subheader2 {
+    font-size: 1.5rem;
+    font-family: 'Ringbearer', sans-serif;
+    color: saddlebrown;
+    text-align: center;
+}
 
 .thumbnails {
     padding-top: 1rem;
@@ -42,7 +48,6 @@
     cursor: pointer;
 }
 
-a {}
 img {
     margin: 0.5rem;
     border-style: inset;

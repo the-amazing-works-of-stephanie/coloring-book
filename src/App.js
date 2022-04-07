@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import './App.css';
-// import Navbar from './navbar';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Home from "./pages";
 import ColoringPage from "./pages/ColoringPage";
+import NotAvailable from "./pages/notavailable"
+import CreativeResponse from "./pages/creativeresponse"
 
 function App() {
 return (
@@ -14,6 +15,8 @@ return (
                 <Routes>
                     <Route exact path='/' exact element={<Home />} />
                     <Route path='/coloringpage' element={<ColoringPage/>} />
+                    <Route path='/notavailable' element={<NotAvailable/>} />
+                    <Route path='/creativeresponse' element={<CreativeResponse/>} />
                 </Routes>
             </Router>
         </div>
