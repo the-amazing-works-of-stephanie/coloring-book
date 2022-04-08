@@ -3,6 +3,9 @@ import { NavLink } from "react-router-dom";
 // import { Carousel } from 'react-carousel-minimal';
 import './pages.css';
 import "./ColoringPage"
+import "./notavailable"
+import "./creativeresponse"
+import gollumpic from '../components/gollumpic.jpg'
 import lotr1 from '../components/lotr1.jpg'
 import lotr2 from '../components/lotr2.jpg'
 import lotr3 from '../components/lotr3.jpg'
@@ -13,8 +16,8 @@ import lotr4 from '../components/lotr4.jpg'
 const Home = () => {
     const data = [
         {
-            "image": require('../components/lotr1.jpg'),
-            "caption": "pic 1"
+            "image": require('../components/gollumpic.jpg'),
+            "caption": "Gollum Coloring Page"
         },
         {
             "image": require("../components/lotr2.jpg"),
@@ -46,20 +49,20 @@ const Home = () => {
             </div>
 
             <div className="subheader">Click on a picture to get coloring!</div>
+            <div className="subheader2"><NavLink to="/creativeresponse" activeStyle>Or click here for the creative response.</NavLink></div>
 
-            {/*<div style={{padding: "1rem 2rem 1rem 2rem"}}>*/}
                 <div className="Nav">
                     <div className="NavLink">
                         <NavLink to="/coloringpage" activeStyle>
-                            <img src={lotr1} alt="img1" height={350} width={650} />
+                            <img src={gollumpic} alt="gollum" height={500} width={500} />
                         </NavLink>
-                        <NavLink to="/coloringpage" activeStyle>
+                        <NavLink to="/notavailable" activeStyle>
                             <img src={lotr2} alt="img1" height={450} width={650} />
                         </NavLink>
-                        <NavLink to="/coloringpage" activeStyle>
+                        <NavLink to="/notavailable" activeStyle>
                             <img src={lotr3} alt="img1" height={650} width={500} />
                         </NavLink>
-                        <NavLink to="/coloringpage" activeStyle>
+                        <NavLink to="/notavailable" activeStyle>
                             <img src={lotr4} alt="img1" height={650} width={500} />
                         </NavLink>
 
