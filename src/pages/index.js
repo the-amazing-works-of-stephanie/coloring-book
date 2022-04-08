@@ -56,20 +56,21 @@ const Home = () => {
                             <img src={gollumpic} alt="gollum" height={500} width={500} />
                         </NavLink>
                         <NavLink to="/notavailable" activeStyle>
-                            <img src={lotr2} alt="img1" height={450} width={650} />
+                            <img src={lotr2} alt="img1" height={500} width={650} />
                         </NavLink>
+                        <br/>
                         <NavLink to="/notavailable" activeStyle>
                             <img src={lotr3} alt="img1" height={650} width={500} />
                         </NavLink>
                         <NavLink to="/notavailable" activeStyle>
                             <img src={lotr4} alt="img1" height={650} width={500} />
                         </NavLink>
-
-                    {/* add a footer with a link to more information about the project (i.e. the writeup we have to
-                     do about why we did what we did for the art project) as well as an ownership blurb */}
                     </div>
                 </div>
-            {/*</div>*/}
+            <div className="subheader2">This project was created by Stephanie Shutter for Engl375. If you have any
+            suggestions, please contact me on LinkedIn at <a href={'https://www.linkedin.com/in/stephanie-shutter/'}>
+                    https://www.linkedin.com/in/stephanie-shutter/</a>
+            </div>
         </div>
     );
 };

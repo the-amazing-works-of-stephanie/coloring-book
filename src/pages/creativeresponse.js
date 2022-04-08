@@ -21,8 +21,7 @@ const CreativeResponse = () => {
                 <br/><br/>
                 If you are curious about the creation process of this application, I'll explain what I did! First, to
                 preface: I cannot draw very well, so I took jpg images from the internet. I'm also a beginner with the
-                Javascript language, so I
-                <a href={'https://uxdesign.cc/5-steps-to-create-a-simple-digital-coloring-book-in-react-3d4f5b2af822'}>
+                Javascript language, so I <a href={'https://uxdesign.cc/5-steps-to-create-a-simple-digital-coloring-book-in-react-3d4f5b2af822'}>
                     found a tutorial on the internet</a> to help get me started.
                 <br/><br/>
                 The images from the internet were in JPG format, and in order for the tutorial to work, I needed them in

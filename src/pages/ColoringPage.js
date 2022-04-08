@@ -21,7 +21,7 @@ const ColoringPage = () => {
     return (
         <div className="ColoringPage">
             <div className='header-container'>
-                <div className="header">Welcome to the coloring page!</div>
+                <div className="Shire-header">Welcome to the coloring page!</div>
             </div>
             <div className="gollum">
                 <Gollum fillColors={fillColors} onFill = {onFillColor} />
