@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 // import {useParams, useHistory} from 'react-router-dom';
-import Flower from '../components/clear-flower';
 import Gollum from '../components/gollum'
 import ColorPalette from '../components/colorpalette';
 import Eraser from '../components/eraser'

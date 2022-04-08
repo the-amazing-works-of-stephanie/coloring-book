@@ -10,7 +10,6 @@ import lotr1 from '../components/lotr1.jpg'
 import lotr2 from '../components/lotr2.jpg'
 import lotr3 from '../components/lotr3.jpg'
 import lotr4 from '../components/lotr4.jpg'
-// import {NavLink} from "../navbar/NavbarElements";
 
 // This is the home page that displays when the page first loads
 const Home = () => {

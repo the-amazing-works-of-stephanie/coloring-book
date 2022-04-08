@@ -11,11 +11,18 @@
 body {
   height: 100vh;
   width: 100%;
-  overflow: scroll;
+  /*overflow: scroll;*/
   background: linear-gradient(315deg, rgba(29,113,60,0.90) 0%, rgba(23,255,115,0.80) 100%);
 }
 
 .Home {
   height: 100vh;
   width: 100%;
+}
+
+.CreativeResponse {
+  height: 100vh;
+  width: 100%;
+  background-color: forestgreen;
+  overflow: auto;
 }

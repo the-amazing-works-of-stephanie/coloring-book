@@ -24,6 +24,13 @@
     font-family: 'Ringbearer', sans-serif;
     color: saddlebrown;
     text-align: center;
+    padding: 0.5rem;
+}
+.Shire-header {
+    font-size: 4rem;
+    font-family: TheShire, serif;
+    color: saddlebrown;
+    text-align: center;
 }
 
 .thumbnails {
