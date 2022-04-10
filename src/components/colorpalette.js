@@ -2,7 +2,6 @@ import React from 'react'
 import './colorpalette.css'
 import gradient1 from "./gradient1";
 import GradientPath from 'gradient-path';
-// import colorGradient from 'javascript-color-gradient'
 
 export default function ColorPalette(props) {
     // const gp = new GradientPath({
@@ -19,7 +18,11 @@ export default function ColorPalette(props) {
     //         .setMidpoint(midpoint).getColor(getColorIndex === 0 ? 0.01 : getColorIndex);
     // };
 
-    const colors = ["#1F4275", "#aaa9ad", "#391802", "#006a4e", "#af002a", "#ffe135", '#gradient1', "#bd33a4", "#318ce7",
+    // gradient1 doesn't work--shows up in the color palette as a white and when you use it, it colors the image black.
+    // const colors = ["#1F4275", "#aaa9ad", "#391802", "#006a4e", "#af002a", "#ffe135", 'gradient1', "#bd33a4", "#318ce7",
+    //     "#66b447", "#46cb18", "#ff7f00", "#00c3e3", "#512888", "#0072bb", "#e94196", "#EA3D3D", "#EED41F", "#400090"]
+
+    const colors = ["black", 'pink', "#1F4275", "#aaa9ad", "#391802", "#006a4e", "#af002a", "#ffe135", "#bd33a4", "#318ce7",
         "#66b447", "#46cb18", "#ff7f00", "#00c3e3", "#512888", "#0072bb", "#e94196", "#EA3D3D", "#EED41F", "#400090"]
 
     return(

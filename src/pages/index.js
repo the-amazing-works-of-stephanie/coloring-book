@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 // import { Carousel } from 'react-carousel-minimal';
 import './pages.css';
 import "./ColoringPage"
+import "./ShireColoringPage"
 import "./notavailable"
 import "./creativeresponse"
 import gollumpic from '../components/gollumpic.jpg'
@@ -17,6 +18,10 @@ const Home = () => {
         {
             "image": require('../components/gollumpic.jpg'),
             "caption": "Gollum Coloring Page"
+        },
+        {
+            "image": require("../components/lotr1.jpg"),
+            "caption": "pic 1"
         },
         {
             "image": require("../components/lotr2.jpg"),
@@ -50,20 +55,23 @@ const Home = () => {
             <div className="subheader">Click on a picture to get coloring!</div>
             <div className="subheader2"><NavLink to="/creativeresponse" activeStyle>Or click here for the creative response.</NavLink></div>
 
+
                 <div className="Nav">
                     <div className="NavLink">
                         <NavLink to="/coloringpage" activeStyle>
                             <img src={gollumpic} alt="gollum" height={500} width={500} />
                         </NavLink>
-                        <NavLink to="/notavailable" activeStyle>
-                            <img src={lotr2} alt="img1" height={500} width={650} />
-                        </NavLink>
-                        <br/>
-                        <NavLink to="/notavailable" activeStyle>
-                            <img src={lotr3} alt="img1" height={650} width={500} />
+                        <NavLink to="/shirecoloringpage" activeStyle>
+                            <img src={lotr1} alt="shire" height={500} width={700} />
                         </NavLink>
                         <NavLink to="/notavailable" activeStyle>
-                            <img src={lotr4} alt="img1" height={650} width={500} />
+                            <img src={lotr2} alt="img1" height={550} width={500} />
+                        </NavLink>
+                        <NavLink to="/notavailable" activeStyle>
+                            <img src={lotr3} alt="img1" height={550} width={400} />
+                        </NavLink>
+                        <NavLink to="/notavailable" activeStyle>
+                            <img src={lotr4} alt="img1" height={550} width={400} />
                         </NavLink>
                     </div>
                 </div>

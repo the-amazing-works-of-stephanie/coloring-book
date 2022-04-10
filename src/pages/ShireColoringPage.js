@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 // import {useParams, useHistory} from 'react-router-dom';
+import ColorTheShire from "../components/theshire";
 import Gollum from '../components/gollum'
-import ColorPalette from '../components/colorpalette';
+import ColorPalette from '../components/colorpalette'
 import Eraser from '../components/eraser'
 import "./pages.css"
 
 const ColoringPage = () => {
     // const history = useHistory();
-    const [fillColors, setFillColors] = useState(Array(14).fill('white'))
+    const [fillColors, setFillColors] = useState(Array(393).fill('white'))
     const [currentColor, setCurrentColor] = useState('white')
 
     const onFillColor = (i) => {
@@ -16,15 +17,13 @@ const ColoringPage = () => {
         setFillColors(newFillColors)
     }
 
-    //right now we will just render one picture to color, but I will try to add more pictures in the future if I can!
-    //NOTE: need to rearrange layout of page.
     return (
         <div className="ColoringPage">
             <div className='header-container'>
-                <div className="Shire-header">Let's color Gollum!</div>
+                <div className="Shire-header">Let's color the Shire!</div>
             </div>
-            <div className="gollum">
-                <Gollum fillColors={fillColors} onFill = {onFillColor} />
+            <div className="theshire">
+                <ColorTheShire fillColors={fillColors} onFill = {onFillColor} />
             </div>
             <div className="paletteContainer">
                 <ColorPalette currentColor={currentColor} changeColor={setCurrentColor}/>
@@ -40,9 +39,6 @@ const ColoringPage = () => {
             {/* also need a box to contain the different colors in the color palette
             box is size-locked to a specific size with scroll enabled
             perhaps there will be headers for each "type" of color, like regular vs gradient vs pattern? */}
-            {/*<div className="flower">*/}
-            {/*    <Flower fillColors={fillColors} onFill = {onFillColor} />*/}
-            {/*</div>*/}
         </div>
     )
 }

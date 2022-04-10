@@ -63,18 +63,14 @@ img {
     border-color: saddlebrown;
     border-width: 1rem;
 }
+
 svg {
-    max-height: 75vh;
-    max-width: 75vh;
-    margin: auto;
+    position: relative;
 }
 
-/* Coloring Book page */
-.ColoringPage {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+g#layer1 {
+    height: 50%;
+    width: 50%;
 }
 
 .paletteContainer {
@@ -85,7 +81,7 @@ svg {
     border-width: 1rem;
     margin: 2rem;
     width: 20vh;
-    height: 75vh;
+    height: 65vh;
     overflow: scroll;
 }
 
@@ -109,8 +105,21 @@ svg {
     border-width: 1rem;
     margin: 2rem;
     width: 75vh;
-    height: 75vh;
+    height: 65vh;
     object-fit: contain;
     text-align: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
+.theshire {
+    display: inline-block;
+    background: white;
+    border-color: saddlebrown;
+    border-style: outset;
+    border-width: 1rem;
+    margin: 2rem;
+    width: 75vh;
+    height: 65vh;
+    object-fit: contain;
+    text-align: center;
+    /*overflow: hidden;*/
 }
