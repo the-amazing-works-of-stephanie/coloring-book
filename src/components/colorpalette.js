@@ -22,7 +22,7 @@ export default function ColorPalette(props) {
     // const colors = ["#1F4275", "#aaa9ad", "#391802", "#006a4e", "#af002a", "#ffe135", 'gradient1', "#bd33a4", "#318ce7",
     //     "#66b447", "#46cb18", "#ff7f00", "#00c3e3", "#512888", "#0072bb", "#e94196", "#EA3D3D", "#EED41F", "#400090"]
 
-    const colors = ["black", 'pink', "#1F4275", "#aaa9ad", "#391802", "#006a4e", "#af002a", "#ffe135", "#bd33a4", "#318ce7",
+    const colors = ["black", 'pink', "#FFD700", "#bfff00", "#d2691e","#1F4275", "#aaa9ad", "#391802", "#006a4e", "#af002a", "#ffe135", "#bd33a4", "#318ce7",
         "#66b447", "#46cb18", "#ff7f00", "#00c3e3", "#512888", "#0072bb", "#e94196", "#EA3D3D", "#EED41F", "#400090"]
 
     return(
