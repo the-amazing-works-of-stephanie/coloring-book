@@ -18,20 +18,20 @@ const ColoringPage = () => {
     }
 
     return (
-        <div className="ColoringPage">
-            <div className='header-container'>
-                <div className="Shire-header">Let's color the Shire!</div>
-            </div>
-            <div className="theshire">
-                <ColorTheShire fillColors={fillColors} onFill = {onFillColor} />
-            </div>
-            <div className="paletteContainer">
-                <ColorPalette currentColor={currentColor} changeColor={setCurrentColor}/>
-            </div>
-            <div className="eraserContainer">
-                <div className="subheader">Eraser</div>
-                <Eraser currentColor={currentColor} changeColor={setCurrentColor}/>
-            </div>
+        <div className='header-container'>
+            <div className="Shire-header">Let's color the Shire!</div>
+            <div className="ColoringPage">
+                <div className="theshire">
+                    <ColorTheShire fillColors={fillColors} onFill = {onFillColor} />
+                </div>
+                <div className="paletteContainer">
+                    <ColorPalette currentColor={currentColor} changeColor={setCurrentColor}/>
+                </div>
+                <div className="eraserContainer">
+                    <div className="subheader">Eraser</div>
+                    <Eraser currentColor={currentColor} changeColor={setCurrentColor}/>
+                </div>
+        </div>
             {/* need to make a square on the upper half of the page to contain the image
             should have zoom in/out capabilities & be a specific size (800x600?)
             how to check if image is horizontal or vertically-aligned? maybe I can put a special variable into the svg

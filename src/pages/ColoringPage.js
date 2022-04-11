@@ -19,19 +19,19 @@ const ColoringPage = () => {
     //right now we will just render one picture to color, but I will try to add more pictures in the future if I can!
     //NOTE: need to rearrange layout of page.
     return (
-        <div className="ColoringPage">
-            <div className='header-container'>
-                <div className="Shire-header">Let's color Gollum!</div>
-            </div>
-            <div className="gollum">
-                <Gollum fillColors={fillColors} onFill = {onFillColor} />
-            </div>
-            <div className="paletteContainer">
-                <ColorPalette currentColor={currentColor} changeColor={setCurrentColor}/>
-            </div>
-            <div className="eraserContainer">
-                <div className="subheader">Eraser</div>
-                <Eraser currentColor={currentColor} changeColor={setCurrentColor}/>
+        <div className='header-container'>
+            <div className="Shire-header">Let's color Gollum!</div>
+            <div className="ColoringPage">
+                <div className="gollum">
+                    <Gollum fillColors={fillColors} onFill = {onFillColor} />
+                </div>
+                <div className="paletteContainer">
+                    <ColorPalette currentColor={currentColor} changeColor={setCurrentColor}/>
+                </div>
+                <div className="eraserContainer">
+                    <div className="subheader">Eraser</div>
+                    <Eraser currentColor={currentColor} changeColor={setCurrentColor}/>
+                </div>
             </div>
             {/* need to make a square on the upper half of the page to contain the image
             should have zoom in/out capabilities & be a specific size (800x600?)
