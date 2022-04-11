@@ -64,15 +64,6 @@ img {
     border-width: 1rem;
 }
 
-svg {
-    position: relative;
-}
-
-g#layer1 {
-    height: 50%;
-    width: 50%;
-}
-
 .paletteContainer {
     display: inline-block;
     background: white;
@@ -98,7 +89,6 @@ g#layer1 {
 
 /* Coloring pages */
 .gollum {
-    display: inline-block;
     background: white;
     border-color: saddlebrown;
     border-style: outset;
@@ -111,13 +101,12 @@ g#layer1 {
     /*overflow: hidden;*/
 }
 .theshire {
-    display: inline-block;
     background: white;
     border-color: saddlebrown;
     border-style: outset;
     border-width: 1rem;
     margin: 2rem;
-    width: 75vh;
+    /*width: 75vh;*/
     height: 65vh;
     object-fit: contain;
     text-align: center;
