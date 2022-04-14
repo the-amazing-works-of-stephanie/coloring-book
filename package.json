@@ -1,6 +1,6 @@
 {
   "name": "coloring-book",
-  "homepage": "https://the-amazing-works-of-stephanie.github.io/coloring-book/",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
