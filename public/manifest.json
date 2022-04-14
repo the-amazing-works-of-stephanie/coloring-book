@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Coloring Book",
+  "name": "My First Coloring Book",
   "icons": [
     {
       "src": "favicon.ico",
