@@ -5,7 +5,6 @@ import './pages.css';
 import "./ColoringPage"
 import "./ShireColoringPage"
 import "./notavailable"
-import "./creativeresponse"
 import gollumpic from '../components/gollumpic.jpg'
 import lotr1 from '../components/lotr1.jpg'
 import lotr2 from '../components/lotr2.jpg'
@@ -45,7 +44,7 @@ const Home = () => {
         fontWeight: 'bold',
     }
 
-    //add a carousel here with the different pictures that can be painted
+    //add a carousel here with the different pictures that can be painted?
     return (
         <div className="Home">
             <div className='header-container'>
@@ -53,7 +52,6 @@ const Home = () => {
             </div>
 
             <div className="subheader">Click on a picture to get coloring!</div>
-            <div className="subheader2"><NavLink to="/creativeresponse" activeStyle>Or click here for the creative response.</NavLink></div>
 
 
                 <div className="Nav">
@@ -75,7 +73,7 @@ const Home = () => {
                         </NavLink>
                     </div>
                 </div>
-            <div className="subheader2">This project was created by Stephanie Shutter for Engl375. If you have any
+            <div className="subheader2">This section of the project was created by Stephanie Shutter for Engl375. If you have any
             suggestions, please contact me on LinkedIn at <a href={'https://www.linkedin.com/in/stephanie-shutter/'}>
                     https://www.linkedin.com/in/stephanie-shutter/</a>
             </div>

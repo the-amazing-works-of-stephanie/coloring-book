@@ -6,7 +6,6 @@ import Home from "./pages";
 import ColoringPage from "./pages/ColoringPage";
 import ShireColoringPage from "./pages/ShireColoringPage";
 import NotAvailable from "./pages/notavailable"
-import CreativeResponse from "./pages/creativeresponse"
 
 function App() {
 return (
@@ -17,32 +16,10 @@ return (
                     <Route path='/coloringpage' element={<ColoringPage/>} />
                     <Route path='/shirecoloringpage' element={<ShireColoringPage/>} />
                     <Route path='/notavailable' element={<NotAvailable/>} />
-                    <Route path='/creativeresponse' element={<CreativeResponse/>} />
                 </Routes>
             </Router>
         </div>
     );
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
